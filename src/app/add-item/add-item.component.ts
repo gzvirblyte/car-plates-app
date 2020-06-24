@@ -37,7 +37,7 @@ export class AddItemComponent implements OnInit {
         Validators.required
       ]]
     });
-    
+
   }
 
   get newPlateNo() {
@@ -55,7 +55,6 @@ export class AddItemComponent implements OnInit {
         location.reload();
         break;
       }
-   
     }
     if (!this.myBoolean) {
       this.addItem();
