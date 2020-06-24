@@ -1,0 +1,22 @@
+<main>
+    <div class="container">
+        <form>
+            <h3>Find cars and their owners</h3>
+            <input type="text" placeholder="Search for a car plate number..." [(ngModel)]="term" name="term">
+            <ul>
+                <li *ngFor="let plate of platesList | filter:term">
+                    <p><span class="bold">Plate no: </span>{{plate.plateNumber}}</p>
+                    <p><span class="bold">Owner: </span>{{plate.owner}}</p>
+                    <div class="buttons">
+                        <button routerLink="/update-item/{{plate.id}}"><i class="fas fa-edit"></i></button>
+                        <button (click)="onDelete(plate)"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                    <hr>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div class="newRecord">
+        <button routerLink="/add-item">CREATE A NEW RECORD</button>
+    </div>
+</main>

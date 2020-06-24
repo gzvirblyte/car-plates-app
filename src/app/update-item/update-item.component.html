@@ -1,0 +1,13 @@
+<main>
+    <div class="container">
+        <form>
+            <p><span class="bold">Plate no: </span>{{plate.plateNumber}}</p>
+            <p><span class="bold">Owner: </span>{{plate.owner}}</p>
+            <label>Enter new plate number</label>
+            <input type="text" [(ngModel)]="newPlate" name="newPlate">
+            <label>Enter new owner name</label>
+            <input type="text" [(ngModel)]="newOwner" name="newOwner">
+            <button (click)="onUpdate()">Submit</button>
+        </form>
+    </div>
+</main>

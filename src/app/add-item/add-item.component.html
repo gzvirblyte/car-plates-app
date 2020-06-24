@@ -1,0 +1,14 @@
+<main>
+    <div class="container">
+        <form [formGroup]="myForm">
+            <label>Enter new plate number</label>
+            <input type="text" name="newPlate" formControlName="newPlateNo">
+            <p class="error" *ngIf="newPlateNo.invalid && newPlateNo.touched">Plate number must be 3 letters and 3 digits <span class="bold">(eg. ABC123)</span></p>
+            <label>Enter new owner name</label>
+            <input type="text" name="newOwner" formControlName="newOwnerName">
+            <p class="error" *ngIf="newOwnerName.invalid && newOwnerName.touched">Owner name is required</p>
+            <button [disabled]="myForm.invalid" (click)="checkIfUnique()">Submit</button>
+        </form>
+    </div>
+</main>
+

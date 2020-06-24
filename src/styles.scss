@@ -1,1 +1,115 @@
 /* You can add global styles to this file, and also import other style files */
+
+//COLORS
+$forestGreen: #627a30;
+$sand: #fbeec1;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+header {
+    height: 100px;
+    background-color: $forestGreen;
+    color: #fff;
+    text-align: center;
+
+    p {
+        text-transform: uppercase;
+        font-size: 3em;
+        line-height: 2em;
+    }
+}
+
+main {
+    width: 50%;
+    margin: 1em auto;
+
+    .container {
+        padding: 1em;
+        background-color: $sand;
+
+        h3 {
+            text-align: center;
+        }
+
+        input {
+            width: 98%;
+            height: 35px;
+            margin: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+
+            li {
+                position: relative;
+                padding: 10px;
+
+                .bold {
+                    font-weight: bold;
+                }
+
+                .buttons {
+                    position: absolute;
+                    right: 0;
+                    top: 15px;
+
+                    button, .submit-btn {
+                        background: $forestGreen;
+                        color: #fff;
+                        border: none;
+                        padding: 6px 9px;
+                        margin: 5px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                    button:hover {
+                        background-color: lighten($forestGreen, 10%);
+                    }
+                    button:active {
+                        position: relative;
+                        top: 1px;
+                    }
+                }
+            }
+        }
+    }
+    .newRecord {
+        margin-top: 30px;
+        text-align: center;
+
+        button {
+            background-color: $forestGreen;
+            border-radius: 28px;
+            border: none;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 17px;
+            padding: 16px 31px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #2f6627;
+        }
+        button:hover {
+            background-color: lighten($forestGreen, 10%);
+        }
+        button:active {
+            position: relative;
+            top: 1px;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    main {
+        margin-top: 0;
+        width: 100%;
+    }
+}
+
