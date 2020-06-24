@@ -1,3 +1,7 @@
+Guide to run the app
+
+## Clone git code or download the ZIP file and open with your IDE
+
 ## Install Angular CLI 
 
 npm install -g @angular/cli
