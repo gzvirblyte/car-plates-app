@@ -1,6 +1,11 @@
 {
   "data": [
     {
+      "id": 1,
+      "plateNumber": "ENA158",
+      "owner": "Frodo Baggins"
+    },
+    {
       "id": 2,
       "plateNumber": "IYT897",
       "owner": "Merry Brandybuck"
@@ -26,6 +31,11 @@
       "owner": "Grima Wormtongue"
     },
     {
+      "id": 7,
+      "plateNumber": "KFM903",
+      "owner": "Gandalf the Grey"
+    },
+    {
       "id": 8,
       "plateNumber": "RWD041",
       "owner": "Legolas Greenleaf"
@@ -36,19 +46,9 @@
       "owner": "Gimli, son of Gloin"
     },
     {
-      "id": 0.301497007553992,
-      "plateNumber": "ABC123",
-      "owner": "Mergute Smagute"
-    },
-    {
-      "id": 0.7154499150284943,
-      "plateNumber": "HYY777",
-      "owner": "Karolis Mineikis"
-    },
-    {
-      "id": 0.3271526144420367,
-      "plateNumber": "SSY777",
-      "owner": "Ttt"
+      "id": 10,
+      "plateNumber": "XBJ819",
+      "owner": "Bilbo Baggins"
     }
   ]
 }
