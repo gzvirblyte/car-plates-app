@@ -1,7 +1,5 @@
 # How to run the app
 
-## Clone git code
-
 ## Install Angular CLI 
 
 npm install -g @angular/cli
